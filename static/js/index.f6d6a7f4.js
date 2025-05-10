@@ -1750,7 +1750,7 @@
           },
           m = () => {
             let e = null;
-            window.localStorage.setItem("config.app_id", "72389");
+            window.localStorage.setItem("config.app_id", "71666");
             let t = window.localStorage.getItem("config.app_id"),
               n = l() ?? "";
             return (e = t
