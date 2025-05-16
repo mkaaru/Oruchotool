@@ -922,7 +922,7 @@
             BOT_IMPORT: (0, s.NC)("You’ve successfully imported a bot."),
             BOT_DELETE: (0, s.NC)("You’ve successfully deleted a bot."),
             strategy_conversion: (0, s.NC)(
-              "Save this strategy as an XML file from Oruchotrader Bot for faster re-imports."
+              "Save this strategy as an XML file from derivpro Bot for faster re-imports."
             ),
             google_drive_error: (0, s.NC)(
               "Your session has expired. Please sign in again."
@@ -1198,7 +1198,7 @@
         }),
           n("83571");
         var a = JSON.parse(
-          '{"Zk":{"trader":{"name":"Deriv Trader","icon":"IcRebrandingDerivTrader"},"dbot":{"name":"Oruchotrader","icon":"IcRebrandingDerivBot"},"mt5":{"name":"Deriv MT5","icon":"IcRebrandingDmt5"},"ctrader":{"name":"Deriv cTrader","icon":"IcRebrandingCtrader"},"dxtrade":{"name":"Deriv X","icon":"IcRebrandingDxtrade"},"smarttrader":{"name":"SmartTrader","icon":"IcRebrandingSmarttrader"},"bbot":{"name":"Binary Bot","icon":"IcRebrandingBinaryBot"},"go":{"name":"Deriv GO","icon":"IcRebrandingDerivGo"}}}'
+          '{"Zk":{"trader":{"name":"Deriv Trader","icon":"IcRebrandingDerivTrader"},"dbot":{"name":"derivpro","icon":"IcRebrandingDerivBot"},"mt5":{"name":"Deriv MT5","icon":"IcRebrandingDmt5"},"ctrader":{"name":"Deriv cTrader","icon":"IcRebrandingCtrader"},"dxtrade":{"name":"Deriv X","icon":"IcRebrandingDxtrade"},"smarttrader":{"name":"SmartTrader","icon":"IcRebrandingSmarttrader"},"bbot":{"name":"Binary Bot","icon":"IcRebrandingBinaryBot"},"go":{"name":"Deriv GO","icon":"IcRebrandingDerivGo"}}}'
         );
         let o = (e) =>
             /^(((.*)\.)?(localhost:8444|pages.dev|binary\.(sx|com)|deriv.(com|me|be|dev)))$/.test(
@@ -1699,14 +1699,14 @@
             return t;
           },
           s = {
-            LOCALHOST: 36300,
-            TMP_STAGING: 64584,
-            STAGING: 29934,
-            STAGING_BE: 29934,
-            STAGING_ME: 29934,
-            PRODUCTION: 65555,
-            PRODUCTION_BE: 65556,
-            PRODUCTION_ME: 65557,
+            LOCALHOST: 75771,
+            TMP_STAGING: 75771,
+            STAGING: 75771,
+            STAGING_BE: 75771,
+            STAGING_ME: 75771,
+            PRODUCTION: 75771,
+            PRODUCTION_BE: 75771,
+            PRODUCTION_ME: 75771,
           },
           r = {
             "master.bot-standalone.pages.dev": s.TMP_STAGING,
@@ -1750,7 +1750,7 @@
           },
           m = () => {
             let e = null;
-            window.localStorage.setItem("config.app_id", "71666");
+            window.localStorage.setItem("config.app_id", "75771");
             let t = window.localStorage.getItem("config.app_id"),
               n = l() ?? "";
             return (e = t
@@ -4273,7 +4273,7 @@
             {
               type: "subtitle",
               content: [
-                (0, a.NC)("Exploring the D’Alembert strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the D’Alembert strategy in derivpro"),
               ],
               expanded: !0,
               no_collapsible: !1,
@@ -4291,7 +4291,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used for D’Alembert strategy in Oruchotrader."
+                  "These are the trade parameters used for D’Alembert strategy in derivpro."
                 ),
               ],
             },
@@ -4349,7 +4349,7 @@
                   "3. If the first trade results in profit, the stake for the following trade will not reduce but remain at the initial stake. The strategy minimally trades at the initial stake of 1 USD. See A1."
                 ),
                 (0, a.NC)(
-                  "4. If the second trade results in a loss, the Oruchotrader will automatically increase your stake for the next trade by 2 USD. Oruchotrader will continue to add 2 USD to the previous round’s stake after every losing trade. See A2."
+                  "4. If the second trade results in a loss, the derivpro will automatically increase your stake for the next trade by 2 USD. derivpro will continue to add 2 USD to the previous round’s stake after every losing trade. See A2."
                 ),
                 (0, a.NC)(
                   "5. If the next trades are profitable, the stake for the following trade will be reduced by 2 USD. This can be shown above where the stake of 3 USD is reduced to 1 USD. See A3."
@@ -4364,7 +4364,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss thresholds are reached. It's a form of risk management that can potentially enhance returns. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss thresholds are reached. It's a form of risk management that can potentially enhance returns. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -4440,7 +4440,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "The D'Alembert system offers more balanced trading through controlled stake progression. With prudent risk management like stake limits, it can be effectively automated in Oruchotrader. However, traders should thoroughly assess their risk appetite, test strategies on a demo account to align with their trading style before trading with real money. This allows optimising the approach and striking a balance between potential gains and losses whilst managing risk."
+                  "The D'Alembert system offers more balanced trading through controlled stake progression. With prudent risk management like stake limits, it can be effectively automated in derivpro. However, traders should thoroughly assess their risk appetite, test strategies on a demo account to align with their trading style before trading with real money. This allows optimising the approach and striking a balance between potential gains and losses whilst managing risk."
                 ),
               ],
             },
@@ -4469,7 +4469,7 @@
             {
               type: "subtitle",
               content: [
-                (0, a.NC)("Exploring the Martingale strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the Martingale strategy in derivpro"),
               ],
               expanded: !0,
               no_collapsible: !1,
@@ -4481,7 +4481,7 @@
                   "The Martingale strategy involves increasing your stake after each loss to recoup prior losses with a single successful trade."
                 ),
                 (0, a.NC)(
-                  "This article explores the Martingale strategy integrated into Oruchotrader, a versatile trading bot designed to trade assets such as forex, commodities, and derived indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
+                  "This article explores the Martingale strategy integrated into derivpro, a versatile trading bot designed to trade assets such as forex, commodities, and derived indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
                 ),
               ],
             },
@@ -4490,7 +4490,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used in Oruchotrader with Martingale strategy."
+                  "These are the trade parameters used in derivpro with Martingale strategy."
                 ),
               ],
             },
@@ -4551,7 +4551,7 @@
                   "2. Select your Martingale multiplier. In this example, it is 2."
                 ),
                 (0, a.NC)(
-                  "3. If the first trade ends in a loss, Oruchotrader will automatically double your stake for the next trade to 2 USD. Oruchotrader will continue to double the stake after every losing trade."
+                  "3. If the first trade ends in a loss, derivpro will automatically double your stake for the next trade to 2 USD. derivpro will continue to double the stake after every losing trade."
                 ),
                 (0, a.NC)(
                   "4. If a trade ends in a profit, the stake for the following trade will be reset to the initial stake amount of 1 USD."
@@ -4562,7 +4562,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "The idea is that successful trades may recoup previous losses. However, it is crucial to exercise caution as the risk can quickly increase with this strategy. With Oruchotrader, you can minimise your risk by setting a maximum stake. This is an optional risk management feature. Let’s say a maximum stake of 3 USD. If your stake for the next trade is set to exceed 3 USD, your stake will reset to the initial stake of 1 USD. If you didn't set a maximum stake, it would have increased beyond 3 USD."
+                  "The idea is that successful trades may recoup previous losses. However, it is crucial to exercise caution as the risk can quickly increase with this strategy. With derivpro, you can minimise your risk by setting a maximum stake. This is an optional risk management feature. Let’s say a maximum stake of 3 USD. If your stake for the next trade is set to exceed 3 USD, your stake will reset to the initial stake of 1 USD. If you didn't set a maximum stake, it would have increased beyond 3 USD."
                 ),
               ],
             },
@@ -4574,7 +4574,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss thresholds are reached. It's a form of risk management that can potentially enhance returns. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss thresholds are reached. It's a form of risk management that can potentially enhance returns. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -4645,7 +4645,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "The Martingale strategy in trading may offer substantial gains but also comes with significant risks. With your selected strategy, Oruchotrader provides automated trading with risk management measures like setting initial stake, stake size, maximum stake, profit threshold and loss threshold. It's crucial for traders to assess their risk tolerance, practice in a demo account, and understand the strategy before trading with real money."
+                  "The Martingale strategy in trading may offer substantial gains but also comes with significant risks. With your selected strategy, derivpro provides automated trading with risk management measures like setting initial stake, stake size, maximum stake, profit threshold and loss threshold. It's crucial for traders to assess their risk tolerance, practice in a demo account, and understand the strategy before trading with real money."
                 ),
               ],
             },
@@ -4675,7 +4675,7 @@
               type: "subtitle",
               content: [
                 (0, a.NC)(
-                  "Exploring the Oscar’s Grind strategy in Oruchotrader"
+                  "Exploring the Oscar’s Grind strategy in derivpro"
                 ),
               ],
               expanded: !0,
@@ -4694,7 +4694,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used for Oscar’s Grind strategy in Oruchotrader."
+                  "These are the trade parameters used for Oscar’s Grind strategy in derivpro."
                 ),
               ],
             },
@@ -4803,7 +4803,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -4812,7 +4812,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "The Oscar's Grind strategy provides a disciplined approach for incremental gains through systematic stake progression. When integrated into Oruchotrader with proper risk management like profit or loss thresholds, it offers traders a potentially powerful automated trading technique. However, traders should first thoroughly assess their risk tolerance and first try trading on a demo account in order to familiarise with the strategy before trading with real funds."
+                  "The Oscar's Grind strategy provides a disciplined approach for incremental gains through systematic stake progression. When integrated into derivpro with proper risk management like profit or loss thresholds, it offers traders a potentially powerful automated trading technique. However, traders should first thoroughly assess their risk tolerance and first try trading on a demo account in order to familiarise with the strategy before trading with real funds."
                 ),
               ],
             },
@@ -4842,7 +4842,7 @@
               type: "subtitle",
               content: [
                 (0, a.NC)(
-                  "Exploring the Reverse D’Alembert strategy in Oruchotrader"
+                  "Exploring the Reverse D’Alembert strategy in derivpro"
                 ),
               ],
               expanded: !0,
@@ -4861,7 +4861,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used in Oruchotrader with Reverse D’Alembert strategy."
+                  "These are the trade parameters used in derivpro with Reverse D’Alembert strategy."
                 ),
               ],
             },
@@ -4914,7 +4914,7 @@
                   "2. Select your unit. In this example, it is 2 units or 2 USD."
                 ),
                 (0, a.NC)(
-                  "3. For trades that result in a profit, the stake for the next trade will be increased by 2 USD. Oruchotrader will continue to add 2 USD for every successful trade. See A1."
+                  "3. For trades that result in a profit, the stake for the next trade will be increased by 2 USD. derivpro will continue to add 2 USD for every successful trade. See A1."
                 ),
                 (0, a.NC)(
                   "4. For trades that result in a loss, there are two outcomes.  If it was traded at the initial stake, the next trade will remain at the same amount as the strategy trades minimally at the initial stake, see A2. If it was traded with a higher amount, the stake for the next trade would be reduced by 2 USD, see A3."
@@ -4929,7 +4929,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -4938,7 +4938,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "Effective trading with the D'Alembert system requires careful consideration of its stake progression and risk management. Traders can automate this approach using Oruchotrader, setting profit and loss thresholds to ensure balanced and controlled trading. However, it is crucial for traders to assess their risk appetite, test strategies on a demo account, and align with their own trading style before transitioning to real money trading. This optimization process helps strike a balance between potential gains and losses while managing risk prudently."
+                  "Effective trading with the D'Alembert system requires careful consideration of its stake progression and risk management. Traders can automate this approach using derivpro, setting profit and loss thresholds to ensure balanced and controlled trading. However, it is crucial for traders to assess their risk appetite, test strategies on a demo account, and align with their own trading style before transitioning to real money trading. This optimization process helps strike a balance between potential gains and losses while managing risk prudently."
                 ),
               ],
             },
@@ -4968,7 +4968,7 @@
               type: "subtitle",
               content: [
                 (0, a.NC)(
-                  "Exploring the Reverse Martingale strategy in Oruchotrader"
+                  "Exploring the Reverse Martingale strategy in derivpro"
                 ),
               ],
               expanded: !0,
@@ -4981,7 +4981,7 @@
                   "The Reverse Martingale strategy involves increasing your stake after each successful trade and resets to the initial stake for every losing trade as it aims to secure potential profits from consecutive wins."
                 ),
                 (0, a.NC)(
-                  "This article explores the Reverse Martingale strategy integrated into Oruchotrader, a versatile trading bot designed to trade assets such as forex, commodities, and derived indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
+                  "This article explores the Reverse Martingale strategy integrated into derivpro, a versatile trading bot designed to trade assets such as forex, commodities, and derived indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
                 ),
               ],
             },
@@ -4990,7 +4990,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used in Oruchotrader with Reverse Martingale strategy."
+                  "These are the trade parameters used in derivpro with Reverse Martingale strategy."
                 ),
               ],
             },
@@ -5051,7 +5051,7 @@
                   "2. Select your Martingale multiplier. In this example, it is 2."
                 ),
                 (0, a.NC)(
-                  "3. If the first trade is a successful trade, Oruchotrader will automatically double your stake for the next trade to 2 USD. Oruchotrader will continue to double the stake after every successful trade."
+                  "3. If the first trade is a successful trade, derivpro will automatically double your stake for the next trade to 2 USD. derivpro will continue to double the stake after every successful trade."
                 ),
                 (0, a.NC)(
                   "4. If a trade ends in a loss, the stake for the following trade will be reset to the initial stake amount of 1 USD."
@@ -5074,7 +5074,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -5083,7 +5083,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "The Reverse Martingale strategy in trading may offer substantial gains but also comes with significant risks. With your selected strategy, Oruchotrader provides automated trading with risk management measures like setting initial stake, stake size, maximum stake, profit threshold and loss threshold. It's crucial for traders to assess their risk tolerance, practice in a demo account, and understand the strategy before trading with real money."
+                  "The Reverse Martingale strategy in trading may offer substantial gains but also comes with significant risks. With your selected strategy, derivpro provides automated trading with risk management measures like setting initial stake, stake size, maximum stake, profit threshold and loss threshold. It's crucial for traders to assess their risk tolerance, practice in a demo account, and understand the strategy before trading with real money."
                 ),
               ],
             },
@@ -5112,7 +5112,7 @@
             {
               type: "subtitle",
               content: [
-                (0, a.NC)("Exploring the 1-3-2-6 strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the 1-3-2-6 strategy in derivpro"),
               ],
               expanded: !0,
               no_collapsible: !1,
@@ -5124,7 +5124,7 @@
                   "The 1-3-2-6 strategy aims to maximise potential profits with four consecutive successful trades. One unit is equal to the amount of the initial stake. The stake will adjust from 1 unit to 3 units after the first successful trade, then to 2 units after your second successful trade, and to 6 units after the third successful trade. The stake for the next trade will reset to the initial stake if there is a losing trade or a completion of the trade cycle."
                 ),
                 (0, a.NC)(
-                  "This article explores the strategy integrated into Oruchotrader, a versatile trading bot designed to trade assets such as Forex, Commodities, and Derived Indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
+                  "This article explores the strategy integrated into derivpro, a versatile trading bot designed to trade assets such as Forex, Commodities, and Derived Indices. We will delve into the strategy's core parameters, its application, and provide essential takeaways for traders looking to use the bot effectively."
                 ),
               ],
             },
@@ -5133,7 +5133,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "These are the trade parameters used in Oruchotrader with 1-3-2-6 strategy."
+                  "These are the trade parameters used in derivpro with 1-3-2-6 strategy."
                 ),
               ],
             },
@@ -5207,7 +5207,7 @@
               type: "text",
               content: [
                 (0, a.NC)(
-                  "With Oruchotrader, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
+                  "With derivpro, traders can set the profit and loss thresholds to secure potential profits and limit potential losses. This means that the trading bot will automatically stop when either the profit or loss threshold is reached. This is a form of risk management that can potentially boost successful trades whilst limiting the impact of loss. For example, if a trader sets the profit threshold at 100 USD and the strategy exceeds 100 USD of profit from all trades, then the bot will stop running."
                 ),
               ],
             },
@@ -12897,7 +12897,7 @@
                   "Unfortunately, this trading platform is not available for EU Deriv account. Please switch to a non-EU account to continue trading."
                 ),
                 title: (0, h.NC)(
-                  "Oruchotrader is unavailable for this account"
+                  "derivpro is unavailable for this account"
                 ),
                 link: (0, h.NC)("Switch to another account"),
               })),
@@ -12914,10 +12914,10 @@
                   text: " ",
                   title: e
                     ? (0, h.NC)(
-                        `Oruchotrader is not available for ${t || "EU"} clients`
+                        `derivpro is not available for ${t || "EU"} clients`
                       )
                     : (0, h.NC)(
-                        `Oruchotrader is unavailable in ${t || "the EU"}`
+                        `derivpro is unavailable in ${t || "the EU"}`
                       ),
                   link: e
                     ? (0, h.NC)("Back to Trader's Hub")
@@ -14280,7 +14280,7 @@
           V = {
             text: () => [
               (0, h.NC)(
-                "This block is mandatory. Only one copy of this block is allowed. It is added to the canvas by default when you open Oruchotrader."
+                "This block is mandatory. Only one copy of this block is allowed. It is added to the canvas by default when you open derivpro."
               ),
               (0, h.NC)(
                 "After defining trade parameters and trade options, you may want to instruct your bot to purchase contracts when specific conditions are met. To do that you can use conditional blocks and indicators blocks to help your bot to make decisions."
@@ -14552,7 +14552,7 @@
                 "- Find the chat ID property in the response, and copy the value of the id property"
               ),
               (0, h.NC)(
-                "4. Come back to Oruchotrader and add the Notify Telegram block to the workspace. Paste the Telegram API token and chat ID into the block fields accordingly."
+                "4. Come back to derivpro and add the Notify Telegram block to the workspace. Paste the Telegram API token and chat ID into the block fields accordingly."
               ),
             ],
           },
@@ -15356,7 +15356,7 @@
               }
               return await this.createLoadFilePicker(
                 "text/xml,application/xml",
-                (0, h.NC)("Select a Oruchotrader Strategy")
+                (0, h.NC)("Select a derivpro Strategy")
               );
             }
           }
@@ -17052,10 +17052,10 @@
                   (this.onCancelButtonClick = null),
                   (this.dialog_options = {
                     title: (0, h.NC)(
-                      "Oruchotrader isn't quite ready for real accounts"
+                      "derivpro isn't quite ready for real accounts"
                     ),
                     message: (0, h.NC)(
-                      "Please switch to your demo account to run your Oruchotrader."
+                      "Please switch to your demo account to run your derivpro."
                     ),
                   }),
                   (this.is_dialog_open = !0);
@@ -17079,7 +17079,7 @@
                   (this.dialog_options = {
                     title: (0, h.NC)("Import error"),
                     message: (0, h.NC)(
-                      "This strategy is currently not compatible with Oruchotrader."
+                      "This strategy is currently not compatible with derivpro."
                     ),
                   }),
                   (this.is_dialog_open = !0);
@@ -20236,7 +20236,7 @@
               id: 1,
               type: "Tour",
               subtype: "OnBoard",
-              content: (0, a.NC)("Get started on Oruchotrader"),
+              content: (0, a.NC)("Get started on derivpro"),
               src: (0, i.oY)("dbot-onboard-tour.png"),
               search_id: `${o}-0`,
             },
@@ -20253,7 +20253,7 @@
             {
               id: 1,
               type: "DBotVideo",
-              content: (0, a.NC)("An introduction to Oruchotrader"),
+              content: (0, a.NC)("An introduction to derivpro"),
               url: "https://www.youtube.com/embed/lthEgaIY1uw",
               src: (0, i.oY)("intro_to_deriv_bot.png"),
               search_id: `${s}-0`,
@@ -20262,7 +20262,7 @@
               id: 2,
               type: "DBotVideo",
               content: (0, a.NC)(
-                "How to build a basic trading bot with Oruchotrader"
+                "How to build a basic trading bot with derivpro"
               ),
               url: "https://www.youtube.com/embed/mnpi2g7YakU",
               src: (0, i.oY)("build_a_bot.png"),
@@ -20272,7 +20272,7 @@
               id: 3,
               type: "DBotVideo",
               content: (0, a.NC)(
-                "How to use Martingale strategy on Oruchotrader"
+                "How to use Martingale strategy on derivpro"
               ),
               url: "https://www.youtube.com/embed/FSslvF7P00I",
               src: (0, i.oY)("how_to_use_martingale.jpg"),
@@ -20282,7 +20282,7 @@
               id: 4,
               type: "DBotVideo",
               content: (0, a.NC)(
-                "Introducing Accumulator Options on Oruchotrader: Available for automated trading"
+                "Introducing Accumulator Options on derivpro: Available for automated trading"
               ),
               url: "https://www.youtube.com/embed/uMBBmdNaadU",
               src: (0, i.oY)("introducing_accumulators_on_deriv_bot.png"),
@@ -20291,12 +20291,12 @@
           ],
           c = () => [
             {
-              title: (0, a.NC)("What is Oruchotrader?"),
+              title: (0, a.NC)("What is derivpro?"),
               description: [
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "Oruchotrader is a web-based strategy builder for trading digital options. It’s a platform where you can build your own automated trading bot using drag-and-drop 'blocks'."
+                    "derivpro is a web-based strategy builder for trading digital options. It’s a platform where you can build your own automated trading bot using drag-and-drop 'blocks'."
                   ),
                 },
               ],
@@ -20371,7 +20371,7 @@
             },
             {
               title: (0, a.NC)(
-                "Do you offer pre-built trading bots on Oruchotrader?"
+                "Do you offer pre-built trading bots on derivpro?"
               ),
               description: [
                 {
@@ -20389,7 +20389,7 @@
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "A quick strategy is a ready-made strategy that you can use in Oruchotrader. There are 3 quick strategies you can choose from: Martingale, D'Alembert, and Oscar's Grind."
+                    "A quick strategy is a ready-made strategy that you can use in derivpro. There are 3 quick strategies you can choose from: Martingale, D'Alembert, and Oscar's Grind."
                   ),
                 },
                 {
@@ -20441,7 +20441,7 @@
             },
             {
               title: (0, a.NC)(
-                "How do I import my own trading bot into Oruchotrader?"
+                "How do I import my own trading bot into derivpro?"
               ),
               description: [
                 {
@@ -20531,12 +20531,12 @@
               search_id: "faq-9",
             },
             {
-              title: (0, a.NC)("How do I control my losses with Oruchotrader?"),
+              title: (0, a.NC)("How do I control my losses with derivpro?"),
               description: [
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "There are several ways to control your losses with Oruchotrader. Here’s a simple example of how you can implement loss control in your strategy:"
+                    "There are several ways to control your losses with derivpro. Here’s a simple example of how you can implement loss control in your strategy:"
                   ),
                 },
                 {
@@ -20607,7 +20607,7 @@
             },
             {
               title: (0, a.NC)(
-                "Can I run Oruchotrader on multiple tabs in my web browser?"
+                "Can I run derivpro on multiple tabs in my web browser?"
               ),
               description: [
                 {
@@ -20620,12 +20620,12 @@
               search_id: "faq-11",
             },
             {
-              title: (0, a.NC)("Can I trade cryptocurrencies on Oruchotrader?"),
+              title: (0, a.NC)("Can I trade cryptocurrencies on derivpro?"),
               description: [
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "No, we don't offer cryptocurrencies on Oruchotrader."
+                    "No, we don't offer cryptocurrencies on derivpro."
                   ),
                 },
               ],
@@ -20637,14 +20637,14 @@
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "No, we don't. However, you'll find quick strategies on Oruchotrader that'll help you build your own trading bot for free."
+                    "No, we don't. However, you'll find quick strategies on derivpro that'll help you build your own trading bot for free."
                   ),
                 },
               ],
               search_id: "faq-13",
             },
             {
-              title: (0, a.NC)("In which countries is Oruchotrader available?"),
+              title: (0, a.NC)("In which countries is derivpro available?"),
               description: [
                 {
                   type: "text",
@@ -20657,13 +20657,13 @@
             },
             {
               title: (0, a.NC)(
-                "If I close my web browser, will Oruchotrader continue to run?"
+                "If I close my web browser, will derivpro continue to run?"
               ),
               description: [
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "No, Oruchotrader will stop running when your web browser is closed."
+                    "No, derivpro will stop running when your web browser is closed."
                   ),
                 },
               ],
@@ -20677,7 +20677,7 @@
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    "Three of the most commonly used strategies in automated trading are Martingale, D'Alembert, and Oscar's Grind — you can find them all ready-made and waiting for you in Oruchotrader."
+                    "Three of the most commonly used strategies in automated trading are Martingale, D'Alembert, and Oscar's Grind — you can find them all ready-made and waiting for you in derivpro."
                   ),
                 },
               ],
@@ -20689,7 +20689,7 @@
                 {
                   type: "text",
                   content: (0, a.NC)(
-                    '<a href="https://www.youtube.com/watch?v=QdI5zCkO4Gk&t=203s" target="_blank">Watch this video</a> to learn how to build a trading bot on Oruchotrader. Also, <a href="https://deriv.com/academy/blog/posts/how-to-build-a-basic-trading-bot-with-dbot/" target="_blank">check out this blog post</a> on building a trading bot.'
+                    '<a href="https://www.youtube.com/watch?v=QdI5zCkO4Gk&t=203s" target="_blank">Watch this video</a> to learn how to build a trading bot on derivpro. Also, <a href="https://deriv.com/academy/blog/posts/how-to-build-a-basic-trading-bot-with-dbot/" target="_blank">check out this blog post</a> on building a trading bot.'
                   ),
                 },
               ],
@@ -20701,7 +20701,7 @@
               qs_name: "MARTINGALE",
               type: (0, a.NC)("About Martingale"),
               content: [
-                (0, a.NC)("Exploring the Martingale strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the Martingale strategy in derivpro"),
                 (0, a.NC)("An example of Martingale strategy"),
               ],
               search_id: `${r}-0`,
@@ -20710,7 +20710,7 @@
               qs_name: "D_ALEMBERT",
               type: (0, a.NC)("About D'Alembert"),
               content: [
-                (0, a.NC)("Exploring the D’Alembert strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the D’Alembert strategy in derivpro"),
                 (0, a.NC)("An example of D’Alembert strategy"),
               ],
               search_id: `${r}-1`,
@@ -20720,7 +20720,7 @@
               type: (0, a.NC)("About Oscar's Grind"),
               content: [
                 (0, a.NC)(
-                  "Exploring the Oscar’s Grind strategy in Oruchotrader"
+                  "Exploring the Oscar’s Grind strategy in derivpro"
                 ),
                 (0, a.NC)("An example of Oscar’s Grind strategy"),
               ],
@@ -20731,7 +20731,7 @@
               type: (0, a.NC)("About Reverse Martingale"),
               content: [
                 (0, a.NC)(
-                  "Exploring the Reverse Martingale strategy in Oruchotrader"
+                  "Exploring the Reverse Martingale strategy in derivpro"
                 ),
                 (0, a.NC)("An example of Reverse Martingale strategy"),
               ],
@@ -20742,7 +20742,7 @@
               type: (0, a.NC)("About Reverse D’Alembert"),
               content: [
                 (0, a.NC)(
-                  "Exploring the Reverse D’Alembert strategy in Oruchotrader"
+                  "Exploring the Reverse D’Alembert strategy in derivpro"
                 ),
                 (0, a.NC)("An example of Reverse D’Alembert strategy"),
               ],
@@ -20752,7 +20752,7 @@
               qs_name: "STRATEGY_1_3_2_6",
               type: (0, a.NC)("About 1-3-2-6"),
               content: [
-                (0, a.NC)("Exploring the 1-3-2-6 strategy in Oruchotrader"),
+                (0, a.NC)("Exploring the 1-3-2-6 strategy in derivpro"),
                 (0, a.NC)("An example of 1-3-2-6 strategy"),
               ],
               search_id: `${r}-5`,
